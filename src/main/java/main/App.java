@@ -60,6 +60,7 @@ class Impl {
 
 	Impl(String[] args) {
 		in = new Scanner(System.in);
+		instruments = new ArrayList();
 	}
 
 	String nextString() {
