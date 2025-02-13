@@ -122,6 +122,12 @@ class Impl {
 	}
 
 	void ListaaSoittimet() {
+		if (instruments.isEmpty()) {
+			System.out.println("Ei lisättyjä soittimia.");
+
+			return;
+		}
+
 		for (Instrument i : instruments) {
 			System.out.println(i.getDetails());
 		}
